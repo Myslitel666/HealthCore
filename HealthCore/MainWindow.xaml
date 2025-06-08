@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HealthCore"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="HealthCore" Height="450" Width="800"
+        Icon="Assets/app.ico">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="49*"/>
+            <ColumnDefinition Width="124*"/>
+            <ColumnDefinition Width="627*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="usernameLabel" Content="Label" HorizontalAlignment="Left" Margin="87,99,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>

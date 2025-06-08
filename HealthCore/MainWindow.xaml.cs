@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using HealthCore.Properties;
 
 namespace HealthCore
 {
@@ -19,6 +20,8 @@ namespace HealthCore
         public MainWindow()
         {
             InitializeComponent();
+
+            usernameLabel.Content = $"Добро пожаловать, {Properties.Settings.Default.Username}!";
         }
     }
 }
